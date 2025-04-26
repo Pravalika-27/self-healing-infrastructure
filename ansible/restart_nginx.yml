@@ -1,0 +1,15 @@
+---
+- name: Restart NGINX service
+  hosts: localhost
+  connection: local
+  become: yes
+  tasks:
+    - name: Restart NGINX
+      ansible.builtin.service:
+        name: nginx
+        state: restarted
+      register: result
+
+    - name: Log restart result
+      ansible.builtin.debug:
+        var: result
