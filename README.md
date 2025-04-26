@@ -5,10 +5,6 @@ This project implements a self-healing infrastructure on an EC2 Ubuntu instance 
 - Alertmanager triggers alerts when issues are detected
 - Ansible automatically remediates the problems
 
-## Architecture
-
-![Architecture Diagram](architecture.png)
-
 ## Prerequisites
 
 - AWS account with EC2 access
